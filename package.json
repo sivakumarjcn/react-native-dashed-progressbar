@@ -1,0 +1,35 @@
+{
+  "name": "react-native-dashedprogress",
+  "version": "0.0.1",
+  "description": "Dashed Gradient Progress bar for React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sivakumarjcn/react-native-dashedprogress.git"
+  },
+  "keywords": [
+    "Dashed",
+    "Progress",
+    "Bar",
+    "Gradient",
+    "Progress",
+    "Bar",
+    "Discrete",
+    "progress",
+    "Bar",
+    "ios",
+    "android"
+  ],
+  "author": "Sivakumar J",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sivakumarjcn/react-native-dashedprogress/issues"
+  },
+  "dependencies": {
+      "react-native-svg": "^6.5.4"
+  },
+  "homepage": "https://github.com/sivakumarjcn/react-native-dashedprogress#readme"
+}
