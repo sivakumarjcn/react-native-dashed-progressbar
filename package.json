@@ -1,6 +1,6 @@
 {
   "name": "react-native-dashed-progressbar",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dashed Gradient Progress bar for React Native",
   "main": "index.js",
   "scripts": {
