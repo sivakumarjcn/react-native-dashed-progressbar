@@ -1,4 +1,4 @@
-# react-native-dashedprogress
+# react-native-dashed-progressbar
 Dashed Gradient Progress bar for React Native.
 
 ![](dashprgbr1.gif)
