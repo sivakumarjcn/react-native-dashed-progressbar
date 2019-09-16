@@ -6,7 +6,7 @@ Dashed Gradient Progress bar for React Native.
 ![](dashprgbr2.gif)
 
 ```
-import { DashedGradientProgressBar, Stop } from 'react-native-dashedprogress'
+import { DashedGradientProgressBar, Stop } from 'react-native-dashed-progressbar'
 ```
 
 ```
