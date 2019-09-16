@@ -17,13 +17,13 @@ function usePrevious(value) {
     return ref.current;
 }
 
-const DashedGradientProgressBar = ({ percent, width, height, stopColors, unfilledColor, segmentWidth, gapWidth }) => {
+const DashedGradientProgressBar = ({ percent, width, height, stopColors, unfilledColor, segmentWidth, gapWidth, duration }) => {
     const animatedRef = useRef(new Animated.Value(0))
     const previousPercent = usePrevious(percent);
     useEffect(() => {
         const animationHandler = Animated.timing(animatedRef.current, {
             toValue: percent,
-            duration: 300,
+            duration: duration,
             useNativeDriver: false
         }).start()
         return () => {
@@ -68,11 +68,12 @@ const DashedGradientProgressBar = ({ percent, width, height, stopColors, unfille
 
 
 DashedGradientProgressBar.defaultProps = {
-    percent: 70,
-    width: 370,
+    percent: 0,
+    width: 375,
     height: 30,
     unfilledColor: "#7a7a7a",
     segmentWidth: 5,
+    duration: 300,
     gapWidth: 5,
     stopColors: [
         <Stop key={1} offset="0%" stopColor="#ada7f3" />,
@@ -87,7 +88,8 @@ DashedGradientProgressBar.propTypes = {
     unfilledColor: PropTypes.string,
     stopColors: PropTypes.arrayOf(PropTypes.element),
     segmentWidth: PropTypes.number,
-    gapWidth: PropTypes.number
+    gapWidth: PropTypes.number,
+    duration: PropTypes.number
 };
 
 export default DashedGradientProgressBar

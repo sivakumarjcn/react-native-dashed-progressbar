@@ -17,6 +17,7 @@ import { DashedGradientProgressBar, Stop } from 'react-native-dashed-progressbar
     <Stop key={1} offset="0%" stopColor="#ada7f3" />,
     <Stop key={4} offset="75%" stopColor="#ff55b8" />
     ]}
+    duration={300}
     unfilledColor={"grey"}
     segmentWidth={10}
     gapWidth={10} />
